@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#champion-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url("./images/Riot-Games-API-Developer-Assets-master/misc-backgrounds/arambg.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 825px;
+}
+
+#about-page {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#navbar {
+  height: 65px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#sorting-bar {
+  height: 65px;
+}
+
+.checkboxes {
+  margin-right: 5px;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  /* Whatever width you want */
+}
+
+.page_split {
+  max-width: 48%;
+  min-width: 48%;
+  margin: 1%;
+  max-height: 880px;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
