@@ -12,7 +12,7 @@ import { useState } from "react";
 import { championList } from "./utils/champion-list";
 
 const appName = "LolChestGranted";
-const riotAPI = "https://euw1.api.riotgames.com/lol/";
+const riotAPI = "http://cors.io/?" + "https://euw1.api.riotgames.com/lol/";
 const champIconsPath = "./images/champion-squares-compressed/";
 const api_key = "RGAPI-f037bcb7-fe33-4d0a-99b4-b4c0ad8dbd36";
 
