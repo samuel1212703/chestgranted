@@ -11,10 +11,12 @@ import axios from "axios";
 import { useState } from "react";
 import { championList } from "./utils/champion-list";
 
+// Set nessecary... things
 const appName = "LolChestGranted";
-const riotAPI = "http://cors.io/?" + "https://euw1.api.riotgames.com/lol/";
+const riotAPI = "https://euw1.api.riotgames.com/lol/";
 const champIconsPath = "./images/champion-squares-compressed/";
 const api_key = "RGAPI-f037bcb7-fe33-4d0a-99b4-b4c0ad8dbd36";
+axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
 
 function App() {
   // Values
@@ -33,7 +35,6 @@ function App() {
   };
 
   const getUserInfo = () => {
-    const header = { "Access-Control-Allow-Origin": "*" };
     console.log("Getting user information for: " + username);
     try {
       axios
@@ -42,8 +43,7 @@ function App() {
             "summoner/v4/summoners/by-name/" +
             username +
             "?api_key=" +
-            api_key,
-          { header }
+            api_key
         )
         .then((response) => {
           setAccountId(response.data.id);
