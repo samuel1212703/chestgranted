@@ -14,7 +14,7 @@ import { championList } from "./utils/champion-list";
 const appName = "LolChestGranted";
 const riotAPI = "https://euw1.api.riotgames.com/lol/";
 const champIconsPath = "./images/champion-squares-compressed/";
-const api_key = "RGAPI-ac51e2dc-0804-465c-ac9f-5d312b6ddb5f";
+const api_key = "RGAPI-f037bcb7-fe33-4d0a-99b4-b4c0ad8dbd36";
 
 function App() {
   // Values
