@@ -3,7 +3,7 @@
   background-image: url("./images/Riot-Games-API-Developer-Assets-master/misc-backgrounds/arambg.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  height: 825px;
+  height: 785px;
 }
 
 #about-page {
@@ -15,12 +15,16 @@
   color: white;
 }
 
+#image-size-text {
+  margin-bottom: 0px;
+}
+
 #navbar {
   height: 65px;
 }
 
 #sorting-bar {
-  height: 65px;
+  padding: 10px;
 }
 
 .checkboxes {

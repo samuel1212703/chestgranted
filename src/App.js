@@ -108,7 +108,7 @@ function App() {
             <div>
               <Container id="sorting-bar" className="d-flex align-items-center">
                 <Row className="d-flex align-items-center">
-                  <Col xs={3}>
+                  <Col xs={12} md={4} lg={4}>
                     <Form className="d-flex">
                       <Form.Control
                         type="search"
@@ -119,13 +119,13 @@ function App() {
                       />
                     </Form>
                   </Col>
-                  <Col xs={3}>
-                    <p>Image Size: {imageSize}</p>
+                  <Col xs={12} md={4} lg={4}>
+                    <p id="image-size-text">Image Size: {imageSize}</p>
                     <Form.Range
                       onChange={(e) => setImageSize(e.target.value + "px")}
                     />
                   </Col>
-                  <Col xs={3}>
+                  <Col xs={6} md={4} lg={4}>
                     <label>
                       <input
                         type="checkbox"
@@ -137,12 +137,12 @@ function App() {
                       Chest Granted
                     </label>
                   </Col>
-                  <Col xs={3}>
+                  {/* <Col xs={6} md={6} lg={4}>
                     <label>
                       <input type="checkbox" className="checkboxes" />
                       My Value
                     </label>
-                  </Col>
+                  </Col> */}
                 </Row>
               </Container>
             </div>
@@ -227,14 +227,14 @@ function App() {
         ) : (
           <div id="champion-section">
             <div id="about-page">
-              <h1>About This Tool</h1>
+              <h1>About This Website</h1>
               <h5>
-                This tool was made to enable LoL-players to check which of their
+                This website was made to enable LoL-players to check which of their
                 champions has a chest available. This will allow the player to
                 optimize their loot per match.
                 <br />
-                The tool is free, but if you're feeling generous, you can donate
-                to:{" "}
+                The site is free and without ads, but if you're feeling generous, you can donate
+                to me here:{" "}
                 <a href="https://paypal.me/TeNoDk" target="_blank">
                   paypal.me
                 </a>
@@ -247,6 +247,10 @@ function App() {
                 associated properties are trademarks or registered trademarks of
                 Riot Games, Inc.
               </p>
+              <br />
+              <br />
+              <p>Get the source code for this project here:</p>
+              <a href="https://github.com/samuel1212703/chestgranted">Github</a>
             </div>
           </div>
         )}
