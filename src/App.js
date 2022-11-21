@@ -2,6 +2,7 @@ import "./App.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -83,9 +84,12 @@ function App() {
     <div className="App">
       <Navbar bg="dark" variant="dark" id="navbar">
         <Container>
-          <Navbar.Brand>{appName}</Navbar.Brand>
+          <Navbar.Brand>
+            <h2 onClick={() => handlePageChange("home")} id="title">
+              {appName}
+            </h2>
+          </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={() => handlePageChange("home")}>Home</Nav.Link>
             <Nav.Link onClick={() => handlePageChange("about")}>About</Nav.Link>
           </Nav>
           <Form className="d-flex">
@@ -225,16 +229,16 @@ function App() {
             </div>
           </div>
         ) : (
-          <div id="champion-section">
+          <div id="about-section">
             <div id="about-page">
               <h1>About This Website</h1>
               <h5>
-                This website was made to enable LoL-players to check which of their
-                champions has a chest available. This will allow the player to
-                optimize their loot per match.
+                This website was made to enable LoL-players to check which of
+                their champions has a chest available. This will allow the
+                player to optimize their loot per match.
                 <br />
-                The site is free and without ads, but if you're feeling generous, you can donate
-                to me here:{" "}
+                The site is free and without ads, but if you're feeling
+                generous, you can donate to me here:{" "}
                 <a href="https://paypal.me/TeNoDk" target="_blank">
                   paypal.me
                 </a>

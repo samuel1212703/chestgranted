@@ -3,7 +3,15 @@
   background-image: url("./images/Riot-Games-API-Developer-Assets-master/misc-backgrounds/arambg.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  height: 785px;
+  height: 82vh;
+}
+
+#about-section {
+  display: flex;
+  background-image: url("./images/Riot-Games-API-Developer-Assets-master/misc-backgrounds/arambg.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 92vh;
 }
 
 #about-page {
@@ -20,11 +28,28 @@
 }
 
 #navbar {
-  height: 65px;
+  height: 8vh;
 }
 
 #sorting-bar {
   padding: 10px;
+  height: 10vh;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #sorting-bar {
+    height: 20vh;
+  }
+  #title {
+    font-size: 0px;
+  }
+  #title:first-letter {
+    font-size: 32px;
+  }
+  #about-page {
+    width: 100%;
+  }
 }
 
 .checkboxes {
@@ -49,7 +74,6 @@
   margin-left: auto;
   margin-right: auto;
   width: 400px;
-  /* Whatever width you want */
 }
 
 .page_split {

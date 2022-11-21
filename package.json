@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://samuel1212703.github.io/chestgranted/",
   "private": true,
-  "proxy": {
-    "*": {
-      "target": "https://samuel1212703.github.io/chestgranted/"
-    }
-  },
+  "proxy": "https://samuel1212703.github.io/chestgranted/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
