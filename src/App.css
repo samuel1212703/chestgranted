@@ -50,6 +50,9 @@
   #about-page {
     width: 100%;
   }
+  #champion-section {
+    height: 71.87vh;
+  }
 }
 
 .checkboxes {

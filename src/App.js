@@ -2,7 +2,6 @@ import "./App.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
@@ -168,6 +167,7 @@ function App() {
                             <img
                               key={champion.championId}
                               style={championImageStyling}
+                              alt={champion.name}
                               src={require(champIconsPath +
                                 champion.championId +
                                 ".png")}
@@ -179,6 +179,7 @@ function App() {
                           <img
                             key={champion.championId}
                             style={championImageStyling}
+                            alt={champion.name}
                             src={require(champIconsPath +
                               champion.championId +
                               ".png")}
@@ -205,6 +206,7 @@ function App() {
                             <img
                               key={champion.championId}
                               style={championImageStyling}
+                              alt={champion.name}
                               src={require(champIconsPath +
                                 champion.championId +
                                 ".png")}
@@ -216,6 +218,7 @@ function App() {
                           <img
                             key={champion.championId}
                             style={championImageStyling}
+                            alt={champion.name}
                             src={require(champIconsPath +
                               champion.championId +
                               ".png")}
